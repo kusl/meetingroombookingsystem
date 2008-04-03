@@ -133,6 +133,11 @@ else if (!empty($HTTP_SERVER_VARS) && isset($HTTP_SERVER_VARS['HTTP_HOST']))
 // +---------------------------------------------------------------------------+
 /* Changes to this file :
  * $Log$
+ * Revision 1.2.4.1  2008/03/28 12:32:17  jberanek
+ * * Wide changes to improve HTML compliance (HTML 4.01 Transitional),
+ *  provided by Claudio Strizzolo. Not yet heavily checked or tested.
+ *  Just on a branch for now.
+ *
  * Revision 1.2  2003/11/14 21:47:20  jflarvoire
  * Added the setting of $HTTP_HOST.
  *
