@@ -18,8 +18,10 @@
 // in are offset by the DST offset incorrectly.
 //
 // When upgrading an existing installation, this should be set to the
-// timezone the web server runs in.
+// timezone the web server runs in.  See the INSTALL document for more information.
 //
+// A list of valid timezones can be found at http://php.net/manual/timezones.php
+// The following line must be uncommented by removing the '//' at the beginning
 //$timezone = "Europe/London";
 
 /*******************
@@ -694,6 +696,9 @@ $auth['only_admin_can_book_repeat'] = FALSE;
 // If you want only administrators to be able to make bookings spanning
 // more than one day, set this variable to TRUE
 $auth['only_admin_can_book_multiday'] = FALSE;
+// If you don't want ordinary users to be able to see the other users'
+// details then set this to TRUE.  (Only relevant when using 'db' authentication]
+$auth['only_admin_can_see_other_users'] = FALSE;
 // If you want to prevent the public (ie un-logged in users) from
 // being able to view bookings, set this variable to TRUE
 $auth['deny_public_access'] = FALSE;
